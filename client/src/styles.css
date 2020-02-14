@@ -1,5 +1,9 @@
 .patriot-mode {
-  color: #fff;
   background-image: url('TRUMPTANK.png');
   background-size: auto;
+}
+.patriot-mode h1 {
+  background: -webkit-linear-gradient(red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

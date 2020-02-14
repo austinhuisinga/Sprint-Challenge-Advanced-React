@@ -25,7 +25,7 @@ const Header = () => {
           className={patriotMode ? 'toggle toggled' : 'toggle'}
           data-testid='patriotModeButton'
         >
-          Enact Patriot Mode
+          Patriot Mode
         </EnactButton>
       </div>
     </div>

@@ -34,6 +34,9 @@ const HeaderDiv = styled.div`
 
 const EnactButton = styled.button`
   background: #ba0000;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
   padding: 3% 1.5%;
   border: 1px solid black;
   border-radius: 10%;
