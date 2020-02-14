@@ -3,6 +3,7 @@ import './App.css';
 
 import axios from 'axios';
 import PlayaList from './components/PlayaList';
+import Header from './components/Header';
 
 class App extends React.Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Header />
         <PlayaList 
           playaData={this.state.playaData}
         />
