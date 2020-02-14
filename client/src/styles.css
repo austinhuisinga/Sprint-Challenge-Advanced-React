@@ -1,4 +1,5 @@
-.dark-mode {
+.patriot-mode {
   color: #fff;
-  background-color: #313843;
+  background-image: url('TRUMPTANK.png');
+  background-size: auto;
 }

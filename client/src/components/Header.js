@@ -1,33 +1,31 @@
 import React, { useState } from 'react';
-import { useDarkMode } from '../hooks/useDarkMode';
-import tank from '../TRUMPTANK.png';
+import { usePatriotMode } from '../hooks/enablePatriotMode';
 import patriot from '../TrumpPatriot.png';
 import { 
-  HeaderImg,
-  HeaderDiv
+  CardData,
+  HeaderDiv,
+  EnactButton
 } from '../stylez';
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useDarkMode(false);
+  const [patriotMode, setPatriotMode] = usePatriotMode(false);
   const toggleMode = e => {
     e.preventDefault();
-    setDarkMode(!darkMode);
+    setPatriotMode(!patriotMode);
   };
 
   return (
     <div>
       <HeaderDiv>
-        <HeaderImg src={patriot} />
         <h1>Playas</h1>
-        <HeaderImg src={tank} />
       </HeaderDiv>
-      <div className="dark-mode__toggle">
-        <button
+      <div className="patriot-mode__toggle">
+        <EnactButton
           onClick={toggleMode}
-          className={darkMode ? 'toggle toggled' : 'toggle'}
+          className={patriotMode ? 'toggle toggled' : 'toggle'}
         >
-          Dark
-        </button>
+          Enact Patriot Mode
+        </EnactButton>
       </div>
     </div>
   );
