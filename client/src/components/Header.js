@@ -23,6 +23,7 @@ const Header = () => {
         <EnactButton
           onClick={toggleMode}
           className={patriotMode ? 'toggle toggled' : 'toggle'}
+          data-testid='patriotModeButton'
         >
           Enact Patriot Mode
         </EnactButton>
